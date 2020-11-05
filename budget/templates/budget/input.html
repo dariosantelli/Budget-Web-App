@@ -1,0 +1,12 @@
+<link rel="stylesheet" type="text/css" href="/static/budget/style.css">
+{% block content %}
+	<div class="vertical-align">
+	<div style="text-align:center">
+    <form method="POST" >{% csrf_token %}
+		{{ form.as_p }}
+        <button type="submit" class="button">Save</button>
+		</div>
+    </form>
+	</div>
+{% endblock %}
+
